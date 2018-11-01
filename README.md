@@ -40,7 +40,7 @@ El script CGI miscript.pl creará en el directorio /tmp
 un fichero de texto con los datos introducidos en el 
 formulario.
 
-Para que no de ningún problema realizamos lo siguiente:
+Para que esto sea posible debemos desactivar el tmp privado de apache:
 
     $ sudo cd /usr/lib/systemd/system
 
