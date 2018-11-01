@@ -34,3 +34,30 @@ Añadirle permisos de ejecución
 En el caso de que no ejecute:
 
         chmod 777 miscript.cgi
+
+
+El script CGI miscript.pl creará en el directorio /tmp
+un fichero de texto con los datos introducidos en el 
+formulario.
+
+Para que no de ningún problema realizamos lo siguiente:
+
+    $ sudo cd /usr/lib/systemd/system
+
+    $ sudo vim httpd.service
+
+En el archivo cambiar “true” por “false” en la línea que contenga “ProvateTmp”
+
+>..
+
+    PrivateTmp=false
+
+>..
+
+Antes de reiniciar el servicio debemos cargar los cambios del servicio:
+
+    $ sudo systemctl daemon-reload
+
+    $ sudo service httpd restart
+
+*Eso es todo!*
