@@ -46,7 +46,7 @@ Para que esto sea posible debemos desactivar el tmp privado de apache:
 
     $ sudo vim httpd.service
 
-En el archivo cambiar “true” por “false” en la línea que contenga “ProvateTmp”
+En el archivo cambiar “true” por “false” en la línea que contenga “PrivateTmp”
 
 >..
 
