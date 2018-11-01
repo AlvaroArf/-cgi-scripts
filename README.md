@@ -1,20 +1,20 @@
 # -cgi-scripts
 
-El propósito del script consistia en un "login" en el que enviamos los datos a 
-una tabla mysql usando modulos DBI, pero no he tenido tiempo aun para desarrollarlo
+El propósito de estos scripts CGI trata de una serie de peticiones por metodo GET a través
+de un formulario y redirigir la información a un archivo en /tmp (solo lo hace miscript.pl)
 
-Estos dos scripts son CGI aunque miscript.cgi usa el modulo CGI mientras que miscript.pl no.
+A diferencia de miscript.pl, miscript.cgi utiliza el módulo CGI, como podeis ver, es mucho
+más sencillo ya que cuenta con una serie de "plantillas".
 
-Los dos no son identicos ya que sin la utilización del modulo CGI no consegui introducir 
-varias opciones por error de sintaxis (a mi entender)
-
+Los dos no son identicos ,pues con la utilización del modulo CGI no conseguí redirigir la 
+información a un archivo.
 
 
 Requisitos:
 
 Servicio de apache2
-
-      -Activar modulo cgid
+   -Activar modulo cgid
+             - a2enmod cgid
 
 Instalar:  cpan -i CGI
 
