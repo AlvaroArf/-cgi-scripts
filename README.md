@@ -12,16 +12,22 @@ más sencillo ya que cuenta con una serie de "plantillas".
 
 **Requisitos:**
 
-*Servicio de apache2
-   *Activar modulo cgid
+* Servicio de apache2
+   * Activar modulo cgid
    
            a2enmod cgid
 
-Instalar:  cpan -i CGI
+*Instalar:*
+           
+     cpan -i CGI
 
 Mover los scripts a /usr/lib/cgi-bin/		#(habitualmente)
 
 Añadirle permisos de ejecución 
+ 
+      chmod +x miscript.pl
+      chmod +x miscript.cgi
+      
 En el caso de que no ejecute:
 
         -chmod 777 miscript.cgi
