@@ -21,7 +21,10 @@ más sencillo ya que cuenta con una serie de "plantillas".
            
       cpan -i CGI
 
-Mover los scripts a /usr/lib/cgi-bin/		#(habitualmente)
+Mover los scripts a /usr/lib/cgi-bin/
+      
+      mv miscript.pl /usr/lib/cgi-bin/
+      mv miscript.cgi /usr/lib/cgi-bin/
 
 Añadirle permisos de ejecución 
  
