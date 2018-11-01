@@ -17,9 +17,9 @@ más sencillo ya que cuenta con una serie de "plantillas".
    
            a2enmod cgid
 
-*Instalar:*
+* Instalar:
            
-     cpan -i CGI
+      cpan -i CGI
 
 Mover los scripts a /usr/lib/cgi-bin/		#(habitualmente)
 
