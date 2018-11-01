@@ -33,4 +33,4 @@ Añadirle permisos de ejecución
       
 En el caso de que no ejecute:
 
-        -chmod 777 miscript.cgi
+        chmod 777 miscript.cgi
