@@ -1,8 +1,8 @@
 #!/usr/bin/perl
 
 print "Content-Type: text/html\n\n";
+open F, ">/tmp/usua-regis.txt";
 if($ENV{'QUERY_STRING'} eq "") {
-   open F, ">/tmp/usua-regis.txt";
    print "<B>Introduce tu nombre</B>
           <form name=\"form1\" method=\"get\" >";
    print "<input type=\"text\" name=\"nombre\" ><br><br>";
