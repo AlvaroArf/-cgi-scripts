@@ -1,4 +1,4 @@
-# -cgi-scripts
+# cgi-scripts
 
 El propósito de estos scripts CGI trata de una serie de peticiones por metodo GET a través
 de un formulario y redirigir la información a un archivo en /tmp (solo lo hace miscript.pl)
