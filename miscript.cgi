@@ -1,9 +1,9 @@
 #!/usr/bin/perl
-
+#use utf8;
 use CGI;
 $query = new CGI;
 
-print $query->header;
+print $query->header(-charset=>'UTF-8');
 print $query->start_html('SCRIPT USANDO MODULO CGI');
 if(!$query->param) {
 	print $query->start_form;
