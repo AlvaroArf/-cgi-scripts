@@ -1,13 +1,10 @@
 # cgi-scripts
 
 El propósito de estos scripts CGI trata de una serie de peticiones por metodo GET a través
-de un formulario y redirigir la información a un archivo en /tmp (solo lo hace miscript.pl)
+de un formulario y redirigir la información a un archivo en /tmp.
 
 A diferencia de miscript.pl, miscript.cgi utiliza el módulo CGI, como podeis ver, es mucho
 más sencillo ya que cuenta con una serie de "plantillas".
-
->Los dos no son identicos ,ya que con la utilización del modulo CGI no conseguí redirigir la 
->información a un archivo.
 
 
 **Requisitos:**
