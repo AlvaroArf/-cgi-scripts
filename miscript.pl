@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 print "Content-Type: text/html\n\n";
-open F, ">/tmp/usua-regis.txt";
+open F, ">>/tmp/usua-regis";
 if($ENV{'QUERY_STRING'} eq "") {
    print "<B>Introduce tu nombre</B>
           <form name=\"form1\" method=\"get\" >";
@@ -28,7 +28,7 @@ if($ENV{'QUERY_STRING'} ne "") {
     print "<h3>Hola <i>$nombre $ape</i></h3>";
     print F "$nombre" . ":" . "$ape";
     print "<B>Introduzca su edad</B>
-          <form name=\"form2\" method=\"get\" >"; 
+          <form name=\"form2\" method=\"get\" >";
     $cont=15;
     print "<select name=\"edad\" >";
     for (my $i=15; $i <= 60; $i++) {
@@ -42,4 +42,5 @@ if($ENV{'QUERY_STRING'} ne "") {
 if(@arGet[0] eq "edad") {
    @edad = split("=", $ENV{QUERY_STRING});
    print "Tiene <B>$edad[1]</B> anios";
+   print F ":" . "$edad[1]" . "/";
 }
